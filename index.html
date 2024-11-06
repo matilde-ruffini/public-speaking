@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://trusted.cdn.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; img-src 'self' data: https://trusted.images.com; font-src 'self' https://fonts.gstatic.com; frame-ancestors 'none';">
     <title>Corso di Public Speaking - Diventa un Oratore Eccezionale</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
@@ -17,39 +16,176 @@
     </style>
 </head>
 <body class="font-sans">
-
-    <!-- Richiedi Informazioni -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-4xl font-bold mb-6">Vuoi Saperne di Più?</h2>
-                    <p class="text-xl mb-6">Scopri come il nostro corso può aiutarti a diventare un comunicatore efficace.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <!-- Form con azione temporanea -->
-                    <form class="space-y-6" action="#" method="post">
-                        <div>
-                            <label class="block mb-2">Nome e Cognome</label>
-                            <input type="text" name="nome" class="w-full p-3 border rounded-lg" required minlength="3" maxlength="50">
-                        </div>
-                        <div>
-                            <label class="block mb-2">Email</label>
-                            <input type="email" name="email" class="w-full p-3 border rounded-lg" required>
-                        </div>
-                        <div>
-                            <label class="block mb-2">Telefono</label>
-                            <input type="tel" name="telefono" class="w-full p-3 border rounded-lg" pattern="[0-9]{10}" required>
-                        </div>
-                        <div>
-                            <label class="block mb-2">Messaggio</label>
-                            <textarea name="messaggio" class="w-full p-3 border rounded-lg" rows="4" required minlength="10" maxlength="500"></textarea>
-                        </div>
-                        <button type="submit" class="card-gradient-2 w-full text-white py-3 rounded-lg hover:opacity-90 transition">Invia Richiesta</button>
-                    </form>
-                </div>
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://www.female-motivational-speakers.com/wp-content/uploads/2021/07/female-speaker-featured.jpg" alt="Public speaking event" class="w-full h-full object-cover"/>
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative z-10 container mx-auto px-4 text-white">
+            <div class="max-w-3xl">
+                <h1 class="text-6xl font-bold mb-6 leading-tight">Trasforma la Tua Capacità di Comunicare</h1>
+                <p class="text-2xl mb-8">Diventa un oratore straordinario e conquista qualsiasi platea con il nostro corso professionale di public speaking.</p>
             </div>
         </div>
-    </section>
-</body>
+    </header>
+  <!-- Spiegazione del Corso -->
+<section class="py-20" id="corso">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">Cosa Imparerai</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card-gradient-1 p-8 rounded-xl text-white transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-bold mb-4">Tecniche di Presentazione</h3>
+                <p class="text-lg">Impara a strutturare presentazioni efficaci e coinvolgenti che catturano l'attenzione del pubblico.</p>
+            </div>
+            <div class="card-gradient-2 p-8 rounded-xl text-white transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-bold mb-4">Gestione dell'Ansia</h3>
+                <p class="text-lg">Scopri tecniche pratiche per gestire lo stress e trasformarlo in energia positiva.</p>
+            </div>
+            <div class="card-gradient-3 p-8 rounded-xl text-white transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-bold mb-4">Linguaggio del Corpo</h3>
+                <p class="text-lg">Padroneggia la comunicazione non verbale per aumentare l'impatto del tuo messaggio.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Richiedi Informazioni -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-6">Vuoi Saperne di Più?</h2>
+                <p class="text-xl mb-6">Scopri come il nostro corso può aiutarti a diventare un comunicatore efficace. I nostri esperti sono pronti a rispondere a tutte le tue domande e a guidarti nel percorso più adatto alle tue esigenze.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Consulenza personalizzata
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Analisi delle tue esigenze
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Piano formativo su misura
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+            <form class="space-y-6" action="mailto:giulia.pessina@itsrizzoli.it" method="post" enctype="text/plain">
+    <div>
+        <label class="block mb-2">Nome e Cognome</label>
+        <input type="text" name="nome" class="w-full p-3 border rounded-lg">
+    </div>
+    <div>
+        <label class="block mb-2">Email</label>
+        <input type="email" name="email" class="w-full p-3 border rounded-lg">
+    </div>
+    <div>
+        <label class="block mb-2">Telefono</label>
+        <input type="tel" name="telefono" class="w-full p-3 border rounded-lg">
+    </div>
+    <div>
+        <label class="block mb-2">Messaggio</label>
+        <textarea name="messaggio" class="w-full p-3 border rounded-lg" rows="4"></textarea>
+    </div>
+    <button type="submit" class="card-gradient-2 w-full bg-gradient-to-r from-pink-500 to-orange-500 text-white py-3 rounded-lg hover:opacity-90 transition">Invia Richiesta</button>
+</form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonianze -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">Cosa Dicono i Nostri Studenti</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-6 bg-gray-50 rounded-lg comments">
+                <img src="https://img.freepik.com/psd-gratis/rendering-3d-del-personaggio-dell-avatar_23-2150611716.jpg?semt=ais_hybrid" alt="Testimonianza 1" class="rounded-full mb-4"/>
+                <p class="italic mb-4">"Ho superato la mia paura di parlare in pubblico. Ora tengo presentazioni con sicurezza!"</p>
+                <p class="font-bold">Laura R.</p>
+            </div>
+            <div class="p-6 bg-gray-50 rounded-lg comments">
+                <img src="https://img.freepik.com/psd-gratis/rendering-3d-del-personaggio-dell-avatar_23-2150611746.jpg" alt="Testimonianza 2" class="rounded-full mb-4"/>
+                <p class="italic mb-4">"Un corso pratico e completo che mi ha aiutato a migliorare la mia comunicazione."</p>
+                <p class="font-bold">Paolo B.</p>
+            </div>
+            <div class="p-6 bg-gray-50 rounded-lg comments">
+                <img src="https://img.freepik.com/psd-gratis/illustrazione-3d-dell-avatar-o-del-profilo-umano_23-2150671142.jpg?semt=ais_hybrid" alt="Testimonianza 3" class="rounded-full mb-4"/>
+                <p class="italic mb-4">"Gli strumenti appresi mi hanno permesso di fare un salto di qualità nel mio lavoro."</p>
+                <p class="font-bold">Giovanni M.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Piani di Iscrizione -->
+<section class="py-20 bg-gray-50" id="piani">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">Il tuo futuro inizia qui</h2>
+        <div class="grid md:grid-cols-1 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-lg" style="display: flex !important; flex-direction: column; align-items: center; justify-content. center">
+                <h3 class="text-2xl font-bold mb-4">Piano Standard</h3>
+                <p class="text-3xl font-bold mb-6">9,90€ <span class="text-sm font-normal">/mese</span></p>
+                <ul class="mb-8">
+                    <li class="mb-2">✓ Accesso completo al corso</li>
+                    <li class="mb-2">✓ Materiali didattici</li>
+                    <li class="mb-2">✓ Supporto via email</li>
+                    <li class="mb-2">✓ Il primo mese è gratuito</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Form Iscrizione con JavaScript per campi dinamici -->
+<section class="py-20 bg-gray-50" id="iscrizione">
+    <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Iscriviti al Corso</h2>
+            <form class="space-y-6">
+                <div>
+                    <label class="block mb-2">Nome e Cognome</label>
+                    <input type="text" placeholder="Nome e Cognome" class="w-full p-3 border rounded-lg" required>
+                </div>
+                <div>
+                    <label class="block mb-2">Email</label>
+                    <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg" required>
+                </div>
+                <div>
+                    <label class="block mb-2">Dati Carta di Credito</label>
+                    <input type="text" placeholder="Numero Carta" class="w-full p-3 border rounded-lg mb-2" required>
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="MM/AA" class="p-3 border rounded-lg" required>
+                        <input type="text" placeholder="CVV" class="p-3 border rounded-lg" required>
+                    </div>
+                </div>
+                <div>
+                    <label class="flex items-center">
+                        <input type="checkbox" required class="mr-2">
+                        Accetto la   <a href="#" class="text-blue-600">   Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="card-gradient-2 w-full bg-gradient-to-r from-pink-500 to-orange-500 text-white py-3 rounded-lg hover:opacity-90 transition">Completa Iscrizione</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2024 Corso di Public Speaking. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+  </body>
 </html>
